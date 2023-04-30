@@ -5,6 +5,7 @@ rust_arch:
   - x86_64-pc-windows-msvc      # [win64]
   - x86_64-apple-darwin         # [osx and x86_64]
   - aarch64-apple-darwin        # [osx and arm64]
+  - armv7-unknown-linux-gnueabihf # [armv7l]
 
 rust_std_extra:
   - aarch64-apple-ios
