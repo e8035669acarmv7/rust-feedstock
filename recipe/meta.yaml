@@ -22,6 +22,7 @@ source:
   - url: https://static.rust-lang.org/dist/rust-{{ version }}-x86_64-pc-windows-msvc.tar.gz  # [win64]
     sha256: 6672eff89792954a6c1013e0b7b8ac8123b3a64f6b466910ea818ec763809fd7  # [win64]
   - url: https://static.rust-lang.org/dist/rust-{{ version }}-armv7-unknown-linux-gnueabihf.tar.gz  # [linux and armv7l]
+    sha256: 25b9593fe6a341bfde8c0031282f4590d12ba0e5f019f57c586b027db5d01f94  # [linux and armv7l]
     patches:
       - 0001-gh-106-install.sh-Perfomance-Use-more-shell-builtins.diff
   # End of block of primary source files.
@@ -54,6 +55,9 @@ source:
     folder: rust-std  # [(linux or win) and x86_64]
   - url: https://static.rust-lang.org/dist/rust-std-{{ version }}-wasm32-unknown-unknown.tar.gz  # [(linux or win) and x86_64]
     sha256: 5ba9b055ab928f952001628d60df020e81c975119717f4823344e50c04280a6f  # [(linux or win) and x86_64]
+    folder: rust-std  # [(linux or win) and x86_64]
+  - url: https://static.rust-lang.org/dist/rust-std-{{ version }}-armv7-unknown-linux-gnueabihf.tar.gz  # [(linux or win) and x86_64]
+    sha256: ae5ee9aee53e1248746aa24d993a85e38662c17777982e7cd8925e1953a699cc  # [(linux or win) and x86_64]
     folder: rust-std  # [(linux or win) and x86_64]
 
 build:
